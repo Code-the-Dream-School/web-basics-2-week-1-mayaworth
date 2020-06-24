@@ -21,6 +21,9 @@ console.log('hello world')
 
 // TODO: ADD CODE HERE
 
+let greeting= 'Hey Maya';
+console.log (greeting);
+
 /* Challenge #2
  * Create variables for your first and last name then print your full name
  *
@@ -33,6 +36,11 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+
+let firstName = "Maya";
+let lastName = "Worth";
+let fullName = firstName + " " + lastName;
+console.log (fullName)
 
 /* Challenge #3
  * Calculate the total price rounded to two decimals
@@ -47,6 +55,11 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+
+let price = "8.99"
+let quantity = "2"
+let total = price * quantity;
+console.log( total);
 
 /* Challenge #4
  * Declare a variable and conditionally assign it a value
@@ -64,6 +77,17 @@ console.log('hello world')
 
 // TODO: ADD CODE HERE
 
+let weather = "Rainy";
+let message;
+ if (weather === "Sunny") {
+    console.log ("Yay! It's sunny outside")
+ } else (
+     console.log("Aww! It's not sunny outside")
+ )
+
+
+
+
 /* Challenge #5
  * Create a function that returns any string
  *
@@ -76,6 +100,13 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+
+function myFunction () {
+    msg = "Today is Tuesday";
+    return msg;
+}
+
+console.log(myFunction());
 
 /* Challenge #6
  * Rewrite the function in Challenge #5 as an arrow function
@@ -90,6 +121,14 @@ console.log('hello world')
 
 // TODO: ADD CODE HERE
 
+const myArrowFunction = () => {
+    msg2  = "Tomorrow is Wednesday"
+    return msg2;
+
+};
+
+console.log( myArrowFunction());
+
 /* Challenge #7
  * Create a function that accepts a string argument and returns it in all uppercase
  *
@@ -103,6 +142,14 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+
+function stringToUpper (str="") {
+    return str.toUpperCase();
+}
+
+let str = "why is it so hot out"
+
+console.log(stringToUpper(str));
 
 /* Challenge #8
  * Create a function that accepts a number argument and returns double its value
@@ -120,3 +167,15 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+
+
+
+function multiplyByTwo (number= ""){
+    return number * 2;
+}
+
+ let num1= "1";
+ let num2= "5";
+ let num3= "10";
+
+ console.log(multiplyByTwo(num1), multiplyByTwo(num2), multiplyByTwo(num3));
